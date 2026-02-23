@@ -94,7 +94,11 @@ db.exec(`
 const app = express();
 app.use(express.json());
 
-// API Routes (Copy from server.ts)
+// API Routes
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok", timestamp: new Date().toISOString() });
+});
+
 app.get("/api/staff", (req, res) => {
   const staff = db.prepare("SELECT * FROM staff").all();
   res.json(staff);

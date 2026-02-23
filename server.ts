@@ -96,6 +96,9 @@ async function startServer() {
   app.use(express.json());
 
   // API Routes
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok", timestamp: new Date().toISOString() });
+  });
   
   // Staff
   app.get("/api/staff", (req, res) => {

@@ -82,7 +82,7 @@ const Sidebar = () => {
           <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
             <Armchair className="text-white w-5 h-5" />
           </div>
-          <span className="text-white font-bold text-xl tracking-tight">LibreSeat</span>
+          <span className="text-white font-bold text-xl tracking-tight">DCLibrary</span>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className="text-zinc-400 hover:text-white">
           {isOpen ? <X size={20} /> : <Menu size={20} />}

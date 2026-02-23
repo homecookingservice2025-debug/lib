@@ -1,0 +1,7 @@
+{
+  "name": "LibreSeat - Advanced Library Management System",
+  "description": "A comprehensive library management software featuring real-time occupancy tracking, automated seat allocation, QR-based attendance, and subscription management.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
